@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://do7aph5aplwi5"
+path="res://.godot/imported/cliff_half_stone.obj-4329d4c4e484d158ca0605ed24da9665.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cliff_half_stone.obj-4329d4c4e484d158ca0605ed24da9665.mesh"]
+
+source_file="res://assets/models/nature/Models/OBJ format/cliff_half_stone.obj"
+dest_files=["res://.godot/imported/cliff_half_stone.obj-4329d4c4e484d158ca0605ed24da9665.mesh", "res://.godot/imported/cliff_half_stone.obj-4329d4c4e484d158ca0605ed24da9665.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

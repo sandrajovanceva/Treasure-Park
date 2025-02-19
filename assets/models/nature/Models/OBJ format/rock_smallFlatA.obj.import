@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dca1frexb77op"
+path="res://.godot/imported/rock_smallFlatA.obj-010f0d7949d81465fc7c89cbb9e2f0bf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rock_smallFlatA.obj-010f0d7949d81465fc7c89cbb9e2f0bf.mesh"]
+
+source_file="res://assets/models/nature/Models/OBJ format/rock_smallFlatA.obj"
+dest_files=["res://.godot/imported/rock_smallFlatA.obj-010f0d7949d81465fc7c89cbb9e2f0bf.mesh", "res://.godot/imported/rock_smallFlatA.obj-010f0d7949d81465fc7c89cbb9e2f0bf.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

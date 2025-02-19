@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bm8df4bol4as"
+path="res://.godot/imported/rock_largeE.obj-5ef8ec309ec55f6b98e01bcaff4a260c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rock_largeE.obj-5ef8ec309ec55f6b98e01bcaff4a260c.mesh"]
+
+source_file="res://assets/models/nature/Models/OBJ format/rock_largeE.obj"
+dest_files=["res://.godot/imported/rock_largeE.obj-5ef8ec309ec55f6b98e01bcaff4a260c.mesh", "res://.godot/imported/rock_largeE.obj-5ef8ec309ec55f6b98e01bcaff4a260c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

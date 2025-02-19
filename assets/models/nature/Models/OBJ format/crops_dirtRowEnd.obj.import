@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ctltg0wchkumr"
+path="res://.godot/imported/crops_dirtRowEnd.obj-8a4a16307c2a2e6a9a3bc7013747cf34.mesh"
+
+[deps]
+
+files=["res://.godot/imported/crops_dirtRowEnd.obj-8a4a16307c2a2e6a9a3bc7013747cf34.mesh"]
+
+source_file="res://assets/models/nature/Models/OBJ format/crops_dirtRowEnd.obj"
+dest_files=["res://.godot/imported/crops_dirtRowEnd.obj-8a4a16307c2a2e6a9a3bc7013747cf34.mesh", "res://.godot/imported/crops_dirtRowEnd.obj-8a4a16307c2a2e6a9a3bc7013747cf34.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

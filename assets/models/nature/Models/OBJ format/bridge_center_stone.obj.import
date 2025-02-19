@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cojhtrdq0cg3c"
+path="res://.godot/imported/bridge_center_stone.obj-74470cc5115d59256c1cc511b9f7346f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bridge_center_stone.obj-74470cc5115d59256c1cc511b9f7346f.mesh"]
+
+source_file="res://assets/models/nature/Models/OBJ format/bridge_center_stone.obj"
+dest_files=["res://.godot/imported/bridge_center_stone.obj-74470cc5115d59256c1cc511b9f7346f.mesh", "res://.godot/imported/bridge_center_stone.obj-74470cc5115d59256c1cc511b9f7346f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://boq2p1q0y1hnp"
+path="res://.godot/imported/flower_purpleC.obj-bff427321daaefb045970f262c8c8272.mesh"
+
+[deps]
+
+files=["res://.godot/imported/flower_purpleC.obj-bff427321daaefb045970f262c8c8272.mesh"]
+
+source_file="res://assets/models/nature/Models/OBJ format/flower_purpleC.obj"
+dest_files=["res://.godot/imported/flower_purpleC.obj-bff427321daaefb045970f262c8c8272.mesh", "res://.godot/imported/flower_purpleC.obj-bff427321daaefb045970f262c8c8272.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

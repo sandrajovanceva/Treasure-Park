@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cinebb4xevoj6"
+path="res://.godot/imported/campfire_logs.obj-4be0c0715b81a6ed64b615d2b9ae25bc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/campfire_logs.obj-4be0c0715b81a6ed64b615d2b9ae25bc.mesh"]
+
+source_file="res://assets/models/nature/Models/OBJ format/campfire_logs.obj"
+dest_files=["res://.godot/imported/campfire_logs.obj-4be0c0715b81a6ed64b615d2b9ae25bc.mesh", "res://.godot/imported/campfire_logs.obj-4be0c0715b81a6ed64b615d2b9ae25bc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

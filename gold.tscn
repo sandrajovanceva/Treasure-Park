@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cj62jc8bccjf2"]
+
+[ext_resource type="Script" path="res://gold.gd" id="1_iawup"]
+[ext_resource type="ArrayMesh" uid="uid://bkbfs0mkw1c6c" path="res://assets/bogatstvo/gold_novo.res" id="2_v3gy0"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_dow0v"]
+height = 0.15
+radius = 0.3
+
+[node name="Gold" type="Area3D"]
+script = ExtResource("1_iawup")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.256359, 2.95661e-08, 0, -4.48232e-08, 0.169098, 0, 0, 0, 0.154737, 0.0431042, -0.0032284, 0.00493866)
+mesh = ExtResource("2_v3gy0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("CylinderShape3D_dow0v")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,124 @@
+[gd_scene load_steps=9 format=3 uid="uid://o1lyr0g4wsox"]
+
+[ext_resource type="PackedScene" uid="uid://0qyad0yuwn0i" path="res://Demo.tscn" id="1_2q83p"]
+[ext_resource type="PackedScene" uid="uid://bxg5suovj6dht" path="res://bob.tscn" id="2_nxoft"]
+[ext_resource type="PackedScene" uid="uid://cj62jc8bccjf2" path="res://gold.tscn" id="3_75o4y"]
+[ext_resource type="Script" path="res://timer.gd" id="4_y7l8c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fmpva"]
+size = Vector3(500, 20, 500)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ndy3t"]
+sky_top_color = Color(0.302418, 0.568314, 0.879758, 1)
+sky_horizon_color = Color(0.812811, 0.594797, 0.542197, 1)
+ground_bottom_color = Color(0.0602616, 0.209216, 0.105211, 1)
+
+[sub_resource type="Sky" id="Sky_pwl1q"]
+sky_material = SubResource("ProceduralSkyMaterial_ndy3t")
+
+[sub_resource type="Environment" id="Environment_fnitb"]
+background_mode = 2
+sky = SubResource("Sky_pwl1q")
+ambient_light_color = Color(0.603758, 0.41949, 0.456256, 1)
+
+[node name="Main" type="Node3D"]
+
+[node name="Demo" parent="." instance=ExtResource("1_2q83p")]
+
+[node name="Bob" parent="." instance=ExtResource("2_nxoft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.525007, 1.65783, 1.36911)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 49.7207, 11.5515)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.479782, 0.866025, -0.140744, -0.57893, 0.433013, 0.690898, 0.659279, -0.25, 0.70912, 48.2552, 89.4509, 0)
+
+[node name="FallZone" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -118, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FallZone"]
+shape = SubResource("BoxShape3D_fmpva")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_fnitb")
+
+[node name="Gold2" type="Node3D" parent="."]
+
+[node name="Gold" parent="Gold2" instance=ExtResource("3_75o4y")]
+transform = Transform3D(2.99949, -0.0466553, -0.029353, 0.0465141, 2.9996, -0.0146028, 0.0295762, 0.0141452, 2.99982, 3.06631, 3.11887, -1.11875)
+
+[node name="Gold3" parent="Gold2" instance=ExtResource("3_75o4y")]
+transform = Transform3D(2.99949, -0.0466553, -0.029353, 0.0465141, 2.9996, -0.0146028, 0.0295762, 0.0141452, 2.99982, -57.2378, 3.11887, -33.9794)
+
+[node name="Gold4" parent="Gold2" instance=ExtResource("3_75o4y")]
+transform = Transform3D(2.99949, -0.0466553, -0.029353, 0.0465141, 2.9996, -0.0146028, 0.0295762, 0.0141452, 2.99982, -30.7408, 3.11887, -9.90842)
+
+[node name="Gold5" parent="Gold2" instance=ExtResource("3_75o4y")]
+transform = Transform3D(2.99949, -0.0466553, -0.029353, 0.0465141, 2.9996, -0.0146028, 0.0295762, 0.0141452, 2.99982, -5.38684, 3.24305, -34.5438)
+
+[node name="Gold6" parent="Gold2" instance=ExtResource("3_75o4y")]
+transform = Transform3D(2.99949, -0.0466553, -0.029353, 0.0465141, 2.9996, -0.0146028, 0.0295762, 0.0141452, 2.99982, -49.2889, 3.11887, 14.1625)
+
+[node name="Gold7" parent="Gold2" instance=ExtResource("3_75o4y")]
+transform = Transform3D(2.99949, -0.0466553, -0.029353, 0.0465141, 2.9996, -0.0146028, 0.0295762, 0.0141452, 2.99982, -61.68, 3.11887, 35.5905)
+
+[node name="Gold8" parent="Gold2" instance=ExtResource("3_75o4y")]
+transform = Transform3D(2.99949, -0.0466553, -0.029353, 0.0465141, 2.9996, -0.0146028, 0.0295762, 0.0141452, 2.99982, 57.1434, 3.11887, 40.9042)
+
+[node name="Gold9" parent="Gold2" instance=ExtResource("3_75o4y")]
+transform = Transform3D(2.99949, -0.0466553, -0.029353, 0.0465141, 2.9996, -0.0146028, 0.0295762, 0.0141452, 2.99982, 47.4545, 3.11887, -36.4333)
+
+[node name="Gold10" parent="Gold2" instance=ExtResource("3_75o4y")]
+transform = Transform3D(2.99949, -0.0466553, -0.029353, 0.0465141, 2.9996, -0.0146028, 0.0295762, 0.0141452, 2.99982, -25.2643, 3.11887, 46.9379)
+
+[node name="Gold11" parent="Gold2" instance=ExtResource("3_75o4y")]
+transform = Transform3D(2.99949, -0.0466553, -0.029353, 0.0465141, 2.9996, -0.0146028, 0.0295762, 0.0141452, 2.99982, 6.2851, -25.3482, 46.9379)
+
+[node name="Gold12" parent="Gold2" instance=ExtResource("3_75o4y")]
+transform = Transform3D(2.99949, -0.0466553, -0.029353, 0.0465141, 2.9996, -0.0146028, 0.0295762, 0.0141452, 2.99982, 74.3585, -25.3482, 46.9379)
+
+[node name="Gold2" parent="Gold2" instance=ExtResource("3_75o4y")]
+transform = Transform3D(2.99949, -0.0466553, -0.029353, 0.0465141, 2.9996, -0.0146028, 0.0295762, 0.0141452, 2.99982, 70.1238, 3.96635, 8.90067)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("4_y7l8c")
+
+[node name="Time" type="Label" parent="CanvasLayer"]
+offset_left = 22.0
+offset_right = 146.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0.811183, 0.781211, 0.455087, 1)
+theme_override_colors/font_shadow_color = Color(0.456844, 0.819101, 0.548658, 1)
+theme_override_font_sizes/font_size = 30
+text = "Time Left: 1min"
+
+[node name="Timer" type="Timer" parent="CanvasLayer"]
+autostart = true
+
+[node name="GameOver" type="Label" parent="CanvasLayer"]
+visible = false
+offset_left = 393.0
+offset_top = 290.0
+offset_right = 706.0
+offset_bottom = 362.0
+theme_override_colors/font_color = Color(0.804881, 0, 0.126791, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 52
+text = "GAME OVER!"
+
+[node name="Win" type="Label" parent="CanvasLayer"]
+visible = false
+offset_left = 289.0
+offset_top = 280.0
+offset_right = 858.0
+offset_bottom = 354.0
+theme_override_colors/font_color = Color(0.156863, 0.843137, 0.156863, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 54
+text = "You won! Well played!"
+
+[connection signal="body_entered" from="FallZone" to="Bob" method="_on_fall_zone_body_entered"]
+[connection signal="timeout" from="CanvasLayer/Timer" to="CanvasLayer" method="_on_timer_timeout"]

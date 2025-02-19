@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bonurhkc2gwv8"
+path="res://.godot/imported/rock_tallB.obj-19edfbdedb2aefab12c142787793b7e0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rock_tallB.obj-19edfbdedb2aefab12c142787793b7e0.mesh"]
+
+source_file="res://assets/models/nature/Models/OBJ format/rock_tallB.obj"
+dest_files=["res://.godot/imported/rock_tallB.obj-19edfbdedb2aefab12c142787793b7e0.mesh", "res://.godot/imported/rock_tallB.obj-19edfbdedb2aefab12c142787793b7e0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

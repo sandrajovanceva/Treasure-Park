@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://o54p1op8mes1"
+path="res://.godot/imported/tent_detailedOpen.obj-ae803c47e7e3ff89c20fc2ba2359dcfd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tent_detailedOpen.obj-ae803c47e7e3ff89c20fc2ba2359dcfd.mesh"]
+
+source_file="res://assets/models/nature/Models/OBJ format/tent_detailedOpen.obj"
+dest_files=["res://.godot/imported/tent_detailedOpen.obj-ae803c47e7e3ff89c20fc2ba2359dcfd.mesh", "res://.godot/imported/tent_detailedOpen.obj-ae803c47e7e3ff89c20fc2ba2359dcfd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

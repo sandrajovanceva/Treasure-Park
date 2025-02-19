@@ -1,0 +1,272 @@
+[gd_scene load_steps=44 format=3 uid="uid://0qyad0yuwn0i"]
+
+[ext_resource type="Script" path="res://addons/terrabrush/TerraBrush.cs" id="1_3qj34"]
+[ext_resource type="Texture2D" uid="uid://o2yy3m3aywgl" path="res://Demo/Heightmap_0_0.res" id="2_1cyma"]
+[ext_resource type="Texture2D" uid="uid://cak3rrsow6l6f" path="res://assets/textures/Grass005_1K-JPG_Color.jpg" id="2_ypwxy"]
+[ext_resource type="Script" path="res://addons/terrabrush/Scripts/EditorResources/ZoneResource.cs" id="3_uy841"]
+[ext_resource type="Texture2D" uid="uid://dlcukd71hr4l5" path="res://assets/textures/Grass005_1K-JPG_NormalGL.jpg" id="3_vcmto"]
+[ext_resource type="Texture2D" uid="uid://byvwitxfr02ne" path="res://assets/textures/Grass005_1K-JPG_Roughness.jpg" id="4_fmwks"]
+[ext_resource type="Script" path="res://addons/terrabrush/Scripts/EditorResources/ZonesResource.cs" id="4_qe0e0"]
+[ext_resource type="Script" path="res://addons/terrabrush/Scripts/EditorResources/TextureSetResource.cs" id="5_yu1si"]
+[ext_resource type="Texture2D" uid="uid://daa8oyu10joyy" path="res://assets/textures/Ground079S_1K-JPG_Color.jpg" id="6_hs45e"]
+[ext_resource type="Texture2D" uid="uid://dodtnufbyvu84" path="res://assets/textures/Ground079S_1K-JPG_NormalGL.jpg" id="7_fdd5k"]
+[ext_resource type="Texture2D" uid="uid://drsysgpb6tl6n" path="res://assets/textures/Ground079S_1K-JPG_Roughness.jpg" id="8_mx1bn"]
+[ext_resource type="Texture2D" uid="uid://b32mra8eo4hdk" path="res://assets/textures/Rock020_1K-JPG_Color.jpg" id="9_eqpvo"]
+[ext_resource type="Texture2D" uid="uid://b2irqs5oqxey8" path="res://assets/textures/Rock020_1K-JPG_NormalGL.jpg" id="10_p4g6r"]
+[ext_resource type="Texture2D" uid="uid://blt5dwiilbm37" path="res://assets/textures/Rock020_1K-JPG_Roughness.jpg" id="11_02vcg"]
+[ext_resource type="Script" path="res://addons/terrabrush/Scripts/EditorResources/TextureSetsResource.cs" id="12_cs2t5"]
+[ext_resource type="Texture2D" uid="uid://dsr7aao7t7x8d" path="res://assets/foliages/PNG/Flat/sprite_0002.png" id="13_423s0"]
+[ext_resource type="Script" path="res://addons/terrabrush/Scripts/EditorResources/FoliageDefinitionResource.cs" id="14_lj8la"]
+[ext_resource type="Texture2D" uid="uid://ucdum4utbae0" path="res://Demo/Splatmap_0_0_0.res" id="14_vindn"]
+[ext_resource type="Script" path="res://addons/terrabrush/Scripts/EditorResources/FoliageResource.cs" id="15_mhwwi"]
+[ext_resource type="Texture2D" uid="uid://hjwldjxbtmw3" path="res://Demo/Foliage_0_0_0.res" id="16_g5pyj"]
+[ext_resource type="PackedScene" uid="uid://cnqqu5luy6qf3" path="res://assets/models/nature/Models/GLTF format/tree_thin.glb" id="16_opddv"]
+[ext_resource type="PackedScene" uid="uid://3msymu2i6qg4" path="res://assets/models/nature/Models/GLTF format/tree_tall.glb" id="17_3napn"]
+[ext_resource type="PackedScene" uid="uid://b4ksdswx3gwjm" path="res://assets/models/nature/Models/GLTF format/tree_small.glb" id="18_bsa7o"]
+[ext_resource type="Script" path="res://addons/terrabrush/Scripts/EditorResources/ObjectDefinitionResource.cs" id="19_s35be"]
+[ext_resource type="Script" path="res://addons/terrabrush/Scripts/EditorResources/ObjectResource.cs" id="20_nggha"]
+[ext_resource type="Script" path="res://addons/terrabrush/Scripts/EditorResources/WaterResource.cs" id="21_wjwmf"]
+[ext_resource type="Texture2D" uid="uid://d2xo5751jav4b" path="res://Demo/Object_0_0_0.res" id="23_5oc30"]
+[ext_resource type="Texture2D" uid="uid://dpwenphss4suf" path="res://Demo/Water_0_0.res" id="26_ctxc3"]
+[ext_resource type="PackedScene" uid="uid://cad3hd8u3t6xm" path="res://assets/models/tree_small_02_4k/tree_small_02_4k.gltf" id="27_722wj"]
+[ext_resource type="PackedScene" uid="uid://b6ng7s2o8bpcv" path="res://assets/models/bench_gltf/scene.gltf" id="28_m0vst"]
+
+[sub_resource type="Resource" id="Resource_2d5m2"]
+script = ExtResource("5_yu1si")
+Name = "Grass"
+AlbedoTexture = ExtResource("2_ypwxy")
+NormalTexture = ExtResource("3_vcmto")
+RoughnessTexture = ExtResource("4_fmwks")
+TextureDetail = -1
+Triplanar = false
+
+[sub_resource type="Resource" id="Resource_y7hnq"]
+script = ExtResource("5_yu1si")
+Name = "Ground"
+AlbedoTexture = ExtResource("6_hs45e")
+NormalTexture = ExtResource("7_fdd5k")
+RoughnessTexture = ExtResource("8_mx1bn")
+TextureDetail = -1
+Triplanar = false
+
+[sub_resource type="Resource" id="Resource_uycky"]
+script = ExtResource("5_yu1si")
+Name = "Rock"
+AlbedoTexture = ExtResource("9_eqpvo")
+NormalTexture = ExtResource("10_p4g6r")
+RoughnessTexture = ExtResource("11_02vcg")
+TextureDetail = -1
+Triplanar = false
+
+[sub_resource type="Resource" id="Resource_mo1pl"]
+script = ExtResource("12_cs2t5")
+TextureSets = [SubResource("Resource_2d5m2"), SubResource("Resource_y7hnq"), SubResource("Resource_uycky")]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_obotw"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("13_423s0")
+albedo_texture_msdf = true
+
+[sub_resource type="QuadMesh" id="QuadMesh_w5ymh"]
+material = SubResource("StandardMaterial3D_obotw")
+center_offset = Vector3(0, 0.5, 0)
+
+[sub_resource type="Resource" id="Resource_ymj1j"]
+script = ExtResource("14_lj8la")
+Strategy = 1
+Mesh = SubResource("QuadMesh_w5ymh")
+MeshScale = Vector3(1, 1, 1)
+WindStrength = 0.1
+VisualInstanceLayers = 1
+LODLevels = 3
+LODRowsPerLevel = 50
+LODInitialCellWidth = 1.0
+Albedo = Color(1, 1, 1, 1)
+AlbedoTextures = []
+UseGroundColor = false
+CastShadow = false
+UseBrushScale = true
+RandomPlacementRange = 3.0
+ApplyOnTextureIndexes = PackedInt32Array()
+MaximumRenderDistance = 50
+EditorMaximumRenderDistance = 50
+
+[sub_resource type="Resource" id="Resource_kgj75"]
+script = ExtResource("15_mhwwi")
+Definition = SubResource("Resource_ymj1j")
+
+[sub_resource type="Resource" id="Resource_miftp"]
+script = ExtResource("19_s35be")
+Strategy = 1
+ObjectFrequency = -1
+RandomRange = 3.0
+RandomYRotation = true
+ObjectScenes = [ExtResource("16_opddv"), ExtResource("17_3napn"), ExtResource("18_bsa7o")]
+LODList = []
+LODMeshes = []
+UpdateDistanceThreshold = 1.0
+UpdateTimeFrequency = 0.1
+VisualInstanceLayers = 1
+
+[sub_resource type="Resource" id="Resource_nwjxy"]
+script = ExtResource("20_nggha")
+Definition = SubResource("Resource_miftp")
+Hide = false
+
+[sub_resource type="Resource" id="Resource_uunld"]
+script = ExtResource("21_wjwmf")
+WaterFactor = 1.0
+WaterInnerOffset = 0.2
+WaterColor = Color(5.94896e-05, 0.325147, 0.923611, 1)
+WaterFresnelColor = Color(1, 1, 1, 1)
+WaterMetallic = 0.0
+WaterRoughness = 0.0
+WaterTimeScale = 0.1
+WaterStrength = 0.4
+WaterNoiseScale = 10.0
+WaterHeightScale = 0.15
+WaterColorDeep = Color(1, 1, 1, 1)
+WaterColorShallow = Color(1, 1, 1, 1)
+WaterBeersLaw = 2.0
+WaterDepthOffset = -0.75
+WaterEdgeScale = 0.1
+WaterNear = 0.5
+WaterFar = 100.0
+WaterEdgeColor = Color(1, 1, 1, 1)
+VisualInstanceLayers = 1
+
+[sub_resource type="Resource" id="Resource_owwgr"]
+script = ExtResource("3_uy841")
+ZonePosition = Vector2i(0, 0)
+HeightMapTexture = ExtResource("2_1cyma")
+SplatmapsTexture = [ExtResource("14_vindn")]
+FoliagesTexture = [ExtResource("16_g5pyj")]
+ObjectsTexture = [ExtResource("23_5oc30")]
+WaterTexture = ExtResource("26_ctxc3")
+
+[sub_resource type="Resource" id="Resource_ifkcf"]
+script = ExtResource("4_qe0e0")
+Zones = [SubResource("Resource_owwgr")]
+
+[node name="Demo" type="Node3D"]
+
+[node name="TerraBrush" type="Node3D" parent="."]
+script = ExtResource("1_3qj34")
+DataPath = "res://Demo"
+TextureSets = SubResource("Resource_mo1pl")
+Foliages = [SubResource("Resource_kgj75")]
+DefaultObjectFrequency = 3
+Objects = [SubResource("Resource_nwjxy")]
+WaterDefinition = SubResource("Resource_uunld")
+TerrainZones = SubResource("Resource_ifkcf")
+metadata/_edit_lock_ = false
+
+[node name="Tree" type="MeshInstance3D" parent="."]
+
+[node name="tree_small_02_4k" parent="Tree" instance=ExtResource("27_722wj")]
+transform = Transform3D(8.78925, 0, 0, 0, 4.4589, 0, 0, 0, 4.40727, 16.3431, -0.233764, 22.8295)
+
+[node name="Tree10" type="MeshInstance3D" parent="."]
+
+[node name="tree_small_02_4k" parent="Tree10" instance=ExtResource("27_722wj")]
+transform = Transform3D(8.78925, 0, 0, 0, 4.4589, 0, 0, 0, 4.40727, -32.2795, -0.233764, 22.8295)
+
+[node name="Tree11" type="MeshInstance3D" parent="."]
+
+[node name="tree_small_02_4k" parent="Tree11" instance=ExtResource("27_722wj")]
+transform = Transform3D(-1.70416, 0, -4.32363, 0, 4.4589, 0, 8.62246, 0, -0.854534, 81.7298, -0.233764, 30.9462)
+
+[node name="Tree8" type="MeshInstance3D" parent="."]
+
+[node name="tree_small_02_4k" parent="Tree8" instance=ExtResource("27_722wj")]
+transform = Transform3D(8.78925, 0, 0, 0, 4.4589, 0, 0, 0, 4.40727, -34.5457, -0.233764, -55.3516)
+
+[node name="Tree9" type="MeshInstance3D" parent="."]
+
+[node name="tree_small_02_4k" parent="Tree9" instance=ExtResource("27_722wj")]
+transform = Transform3D(8.5666, 0, 0.985723, 0, 4.4589, 0, -1.96579, 0, 4.29562, 0.325201, -0.233764, -72.927)
+
+[node name="Tree7" type="MeshInstance3D" parent="."]
+
+[node name="tree_small_02_4k" parent="Tree7" instance=ExtResource("27_722wj")]
+transform = Transform3D(8.78925, 0, 0, 0, 4.4589, 0, 0, 0, 4.40727, -32.6569, -0.233764, 71.8295)
+
+[node name="Tree6" type="MeshInstance3D" parent="."]
+
+[node name="tree_small_02_4k" parent="Tree6" instance=ExtResource("27_722wj")]
+transform = Transform3D(8.78925, 0, 0, 0, 4.4589, 0, 0, 0, 4.40727, -37.6569, -0.233764, -30.1705)
+
+[node name="Tree5" type="MeshInstance3D" parent="."]
+
+[node name="tree_small_02_4k" parent="Tree5" instance=ExtResource("27_722wj")]
+transform = Transform3D(8.78925, 0, 0, 0, 4.4589, 0, 0, 0, 4.40727, -78.6569, -0.233764, -43.1705)
+
+[node name="Tree4" type="MeshInstance3D" parent="."]
+
+[node name="tree_small_02_4k" parent="Tree4" instance=ExtResource("27_722wj")]
+transform = Transform3D(8.78925, 0, 0, 0, 4.4589, 0, 0, 0, 4.40727, 57.3431, -0.233764, -54.1705)
+
+[node name="Tree12" type="MeshInstance3D" parent="."]
+
+[node name="tree_small_02_4k" parent="Tree12" instance=ExtResource("27_722wj")]
+transform = Transform3D(8.78925, 0, 0, 0, 4.4589, 0, 0, 0, 4.40727, 30.598, -0.233764, 59.6889)
+
+[node name="Tree3" type="MeshInstance3D" parent="."]
+
+[node name="tree_small_02_4k" parent="Tree3" instance=ExtResource("27_722wj")]
+transform = Transform3D(8.78925, 0, 0, 0, 4.4589, 0, 0, 0, 4.40727, -73.2686, -0.233764, 22.8295)
+
+[node name="Tree2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.79778, 0, -5.76447)
+
+[node name="tree_small_02_4k" parent="Tree2" instance=ExtResource("27_722wj")]
+transform = Transform3D(8.78925, 0, 0, 0, 4.4589, 0, 0, 0, 4.40727, 16.3431, -0.233764, -42.9142)
+
+[node name="Bench" type="MeshInstance3D" parent="."]
+
+[node name="Sketchfab_Scene" parent="Bench" instance=ExtResource("28_m0vst")]
+transform = Transform3D(0.34673, 0, 0.253527, 0, 0.306346, 0, -0.299131, 0, 0.293869, 27.1171, 0, 27.9024)
+
+[node name="Bench2" type="MeshInstance3D" parent="."]
+
+[node name="Sketchfab_Scene" parent="Bench2" instance=ExtResource("28_m0vst")]
+transform = Transform3D(0.00802485, -0.00381982, -0.375279, -0.0384736, 0.295742, -0.00529704, 0.490689, 0.0232509, 0.00572209, 21.4565, 0.219836, -35.672)
+
+[node name="Bench3" type="MeshInstance3D" parent="."]
+
+[node name="Sketchfab_Scene" parent="Bench3" instance=ExtResource("28_m0vst")]
+transform = Transform3D(-0.363102, -0.0193086, -0.356659, -0.0434453, 0.310957, -0.00666957, 0.418644, 0.0155231, -0.310033, 54.8097, 0.219836, -47.2043)
+
+[node name="Bench4" type="MeshInstance3D" parent="."]
+
+[node name="Sketchfab_Scene" parent="Bench4" instance=ExtResource("28_m0vst")]
+transform = Transform3D(0.375576, 0.0236373, 0.166489, -0.0341458, 0.316038, -0.00464884, -0.22056, -0.00867687, 0.284222, -71.3327, 0.219836, 10.6496)
+
+[node name="Bench5" type="MeshInstance3D" parent="."]
+
+[node name="Sketchfab_Scene" parent="Bench5" instance=ExtResource("28_m0vst")]
+transform = Transform3D(0.416693, 0.0154691, -0.274541, -0.043216, 0.309601, -0.00591092, 0.360887, 0.0192134, 0.316286, -22.9859, 0.219836, -29.8365)
+
+[node name="Bench6" type="MeshInstance3D" parent="."]
+
+[node name="Sketchfab_Scene" parent="Bench6" instance=ExtResource("28_m0vst")]
+transform = Transform3D(-0.17476, 0.026464, 0.36859, -0.0297868, 0.299649, -0.0413767, -0.569026, -0.0238134, -0.111036, -21.8643, 0.658664, 60.6389)
+
+[node name="Bench7" type="MeshInstance3D" parent="."]
+
+[node name="Sketchfab_Scene" parent="Bench7" instance=ExtResource("28_m0vst")]
+transform = Transform3D(-0.150348, -0.00258947, 0.347401, -0.0409437, 0.288683, -0.005118, -0.500153, -0.0228539, -0.104011, 44.5954, 0.219836, 60.6389)
+
+[node name="Bench8" type="MeshInstance3D" parent="."]
+
+[node name="Sketchfab_Scene" parent="Bench8" instance=ExtResource("28_m0vst")]
+transform = Transform3D(-0.506635, -0.0168841, 0.234064, -0.0496868, 0.311875, -0.00549005, -0.380794, -0.0182304, -0.310699, 72.5659, 0.219836, 37.6574)
+
+[node name="Bench9" type="MeshInstance3D" parent="."]
+
+[node name="Sketchfab_Scene" parent="Bench9" instance=ExtResource("28_m0vst")]
+transform = Transform3D(0.425995, 0.0161722, -0.193947, -0.0384216, 0.264584, -0.00552541, 0.242314, 0.0135214, 0.340088, -75.9209, 0.219836, -30.3426)

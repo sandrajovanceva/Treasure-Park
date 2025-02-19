@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cmls7afpf34vl"
+path="res://.godot/imported/fence_planksDouble.obj-bcd67b8842e86fad86f85cba9b1481ee.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fence_planksDouble.obj-bcd67b8842e86fad86f85cba9b1481ee.mesh"]
+
+source_file="res://assets/models/nature/Models/OBJ format/fence_planksDouble.obj"
+dest_files=["res://.godot/imported/fence_planksDouble.obj-bcd67b8842e86fad86f85cba9b1481ee.mesh", "res://.godot/imported/fence_planksDouble.obj-bcd67b8842e86fad86f85cba9b1481ee.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

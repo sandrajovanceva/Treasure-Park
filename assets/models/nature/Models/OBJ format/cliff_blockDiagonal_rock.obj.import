@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bhnpxo80l4cui"
+path="res://.godot/imported/cliff_blockDiagonal_rock.obj-f02854b92b09541d4be9df795f059110.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cliff_blockDiagonal_rock.obj-f02854b92b09541d4be9df795f059110.mesh"]
+
+source_file="res://assets/models/nature/Models/OBJ format/cliff_blockDiagonal_rock.obj"
+dest_files=["res://.godot/imported/cliff_blockDiagonal_rock.obj-f02854b92b09541d4be9df795f059110.mesh", "res://.godot/imported/cliff_blockDiagonal_rock.obj-f02854b92b09541d4be9df795f059110.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

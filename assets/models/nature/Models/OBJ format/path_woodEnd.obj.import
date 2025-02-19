@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://fhcaesiiid41"
+path="res://.godot/imported/path_woodEnd.obj-803f2a043edf3cf1faed71bee10a9711.mesh"
+
+[deps]
+
+files=["res://.godot/imported/path_woodEnd.obj-803f2a043edf3cf1faed71bee10a9711.mesh"]
+
+source_file="res://assets/models/nature/Models/OBJ format/path_woodEnd.obj"
+dest_files=["res://.godot/imported/path_woodEnd.obj-803f2a043edf3cf1faed71bee10a9711.mesh", "res://.godot/imported/path_woodEnd.obj-803f2a043edf3cf1faed71bee10a9711.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

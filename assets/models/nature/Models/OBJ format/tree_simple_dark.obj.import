@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://db7vmpc40p5fw"
+path="res://.godot/imported/tree_simple_dark.obj-13eb66f2d4bc3c3a3acb759480937f27.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree_simple_dark.obj-13eb66f2d4bc3c3a3acb759480937f27.mesh"]
+
+source_file="res://assets/models/nature/Models/OBJ format/tree_simple_dark.obj"
+dest_files=["res://.godot/imported/tree_simple_dark.obj-13eb66f2d4bc3c3a3acb759480937f27.mesh", "res://.godot/imported/tree_simple_dark.obj-13eb66f2d4bc3c3a3acb759480937f27.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

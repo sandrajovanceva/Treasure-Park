@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://da1v1mgyxvtt8"
+path="res://.godot/imported/statue_ring.obj-a2e3fc6cdde158ca27f824cd6a52c6ff.mesh"
+
+[deps]
+
+files=["res://.godot/imported/statue_ring.obj-a2e3fc6cdde158ca27f824cd6a52c6ff.mesh"]
+
+source_file="res://assets/models/nature/Models/OBJ format/statue_ring.obj"
+dest_files=["res://.godot/imported/statue_ring.obj-a2e3fc6cdde158ca27f824cd6a52c6ff.mesh", "res://.godot/imported/statue_ring.obj-a2e3fc6cdde158ca27f824cd6a52c6ff.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
